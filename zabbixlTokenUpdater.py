@@ -32,10 +32,9 @@ def updateToken(token):
             'Authorization': 'Bearer '+ token
         }
 
-	# Update your http agentchecks with the token. Use the item ID number found in the URL of the http agent itself.
-
+	# Update your http agent checks with the token. Use the item ID number found in the URL of the http agent itself.
         zapi.item.update(itemid='00000', headers=jsontoken)
-        logging.info("Apperantly the token was updted... a double check won't hurt!")
+        logging.info("Apperantly the token was updated... a double check won't hurt!")
     except Exception as e:
         logging.error(e)
 

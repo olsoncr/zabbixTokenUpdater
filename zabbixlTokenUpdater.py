@@ -18,7 +18,7 @@ def getToken():
             logging.info("Token has been retrieved")
             return token
         else:
-            logging.error("Error getting token for RNConrol")
+            logging.error("Error getting token for portal")
 
     except Exception as e:
         logging.error(e)

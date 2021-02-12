@@ -26,7 +26,7 @@ def getToken():
 def updateToken(token):
     try:
         zapi = ZabbixAPI("<zabbix url. ie: http://localhost>")
-        zapi.login("<Zabbix API user>","<Zabbix API passwprd>")
+        zapi.login("<Zabbix API user>","<Zabbix API password>")
 
         jsontoken = {
             'Authorization': 'Bearer '+ token
